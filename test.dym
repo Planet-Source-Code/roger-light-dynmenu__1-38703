@@ -1,0 +1,11 @@
+<config>
+    <systray click='0' />
+    <defaultitems position='0' icon='' tooltip='' />
+</config>
+<menu caption='Open Readme' type='shell' cmd='' args='' bitmap=''>
+    <smenu caption='Using Shell Command' type='shell' cmd='c:\windows\notepad.exe' args='dynmenu.txt' bitmap='txt.bmp'/>
+    <smenu caption='Using ShellExec Command' type='shellexec' cmd='open' args='dynmenu.txt' bitmap='txt.bmp'/>
+</menu>
+<menu caption='-' type='shell' cmd='' args='' bitmap=''/>
+<menu caption='Open C:' type='shellexec' cmd='open' args='c:\' bitmap='drive.bmp'/>
+<menu caption='Edit This Menu' type='shellexec' cmd='edit' args='test.dym' bitmap='dynmenu.bmp'/>

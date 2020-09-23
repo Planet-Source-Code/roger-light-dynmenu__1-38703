@@ -1,0 +1,18 @@
+<config>
+    <systray click='0' />
+    <defaultitems position='1' icon='' tooltip='A simple DynMenu test showing extensive sub menus' />
+</config>
+<menu caption='New Item9' type='shell' cmd='' args='' bitmap=''>
+    <smenu caption='New Item8' type='' cmd='' args='' bitmap=''/>
+    <smenu caption='New Item7' type='' cmd='' args='' bitmap=''>
+        <ssmenu caption='New Item6' type='' cmd='' args='' bitmap=''/>
+    </smenu>
+    <smenu caption='New Item5' type='' cmd='' args='' bitmap=''>
+        <ssmenu caption='New Item4' type='' cmd='' args='' bitmap=''/>
+        <ssmenu caption='New Item3' type='' cmd='' args='' bitmap=''>
+            <sssmenu caption='New Item2' type='' cmd='' args='' bitmap=''/>
+        </ssmenu>
+    </smenu>
+    <smenu caption='New Item10' type='' cmd='' args='' bitmap=''/>
+</menu>
+<menu caption='New Item1' type='' cmd='' args='' bitmap=''/>

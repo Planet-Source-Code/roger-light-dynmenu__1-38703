@@ -1,0 +1,28 @@
+<config>
+    <systray click='0' />
+    <defaultitems position='0' icon='atchoo.ico' tooltip='Click to view atchoo.org sitemap' />
+    <columns count='' />
+</config>
+<menu caption='atchoo.org' type='shellexec' cmd='open' args='http://www.atchoo.org' >
+    <smenu caption='Home' type='shellexec' cmd='open' args='http://www.atchoo.org' />
+    <smenu caption='Sir Archibald of Grimsby' type='shellexec' cmd='open' args='http://www.atchoo.org/archie.php' />
+    <smenu caption='Woggle Making' type='shellexec' cmd='open' args='http://www.atchoo.org/woggle' />
+    <smenu caption='VB' type='shell' cmd='' args='' >
+        <ssmenu caption='Tutorials' type='shellexec' cmd='open' args='http://www.atchoo.org/vb' />
+        <ssmenu caption='SimpleDB' type='shellexec' cmd='open' args='http://www.atchoo.org/vb/simpledb.php' />
+        <ssmenu caption='System Tray' type='shellexec' cmd='open' args='http://www.atchoo.org/vb/systray.php' />
+    </smenu>
+</menu>
+<menu caption='UK University Email Search' type='shell' cmd='' args='' >
+    <smenu caption='Home' type='shellexec' cmd='open' args='http://search.atchoo.org' />
+    <smenu caption='London Colleges' type='shellexec' cmd='open' args='http://search.atchoo.org/london.php' />
+    <smenu caption='University Sector Colleges' type='shellexec' cmd='open' args='http://search.atchoo.org/college.php' />
+</menu>
+<menu caption='GGZ' type='shell' cmd='' args='' >
+    <smenu caption='Home' type='shellexec' cmd='open' args='http://ggz.sf.net' />
+    <smenu caption='Project Page' type='shellexec' cmd='open' args='http://sf.net/projects/ggz' />
+</menu>
+<menu caption='WGGZ' type='shell' cmd='' args='' >
+    <smenu caption='Home' type='shellexec' cmd='open' args='http://wggz.sf.net' />
+    <smenu caption='Project Page' type='shellexec' cmd='open' args='http://sf.net/projects/wggz' />
+</menu>

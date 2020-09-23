@@ -1,0 +1,34 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\.dym]
+@="dynamic_menu"
+
+[HKEY_CLASSES_ROOT\.dym\ShellNew]
+@=""
+FileNum=""
+
+[HKEY_CLASSES_ROOT\dynamic_menu]
+@="Dynamic Menu"
+
+[HKEY_CLASSES_ROOT\dynamic_menu\shell]
+
+[HKEY_CLASSES_ROOT\dynamic_menu\shell\open]
+@=""
+
+[HKEY_CLASSES_ROOT\dynamic_menu\shell\open\command]
+@="D:\\MyDocs\\Programming\\VB\\VB6\\DynMenu\\DynMenu.exe %1"
+
+[HKEY_CLASSES_ROOT\dynamic_menu\DefaultIcon]
+@="D:\\MyDocs\\Programming\\VB\\VB6\\DynMenu\\dym.ico"
+
+[HKEY_CLASSES_ROOT\dynamic_menu\shell\edit]
+@="Edit Menu"
+
+[HKEY_CLASSES_ROOT\dynamic_menu\shell\edit\command]
+@="D:\\MyDocs\\Programming\\VB\\VB6\\DynMenu\\DynMenu.exe /edit %1"
+
+[HKEY_CLASSES_ROOT\dynamic_menu\shell\addtosystray]
+@="Add Menu to SysTray"
+
+[HKEY_CLASSES_ROOT\dynamic_menu\shell\addtosystray\command]
+@="D:\\MyDocs\\Programming\\VB\\VB6\\DynMenu\\DynMenu.exe /systray %1"
