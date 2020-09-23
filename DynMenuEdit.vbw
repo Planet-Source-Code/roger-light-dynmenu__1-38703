@@ -1,0 +1,7 @@
+frmMenuEdit = 60, 17, 919, 739, , 29, 103, 803, 762, C
+modSystray = 28, 46, 845, 662, C
+GGZMLNode = 88, 88, 772, 704, C
+GGZMLNodeAttribute = 44, 44, 728, 660, C
+GGZMLNodeAttributes = 66, 66, 750, 682, C
+GGZMLNodes = 198, 198, 882, 814, C
+GGZMLParser = 154, 154, 838, 770, C

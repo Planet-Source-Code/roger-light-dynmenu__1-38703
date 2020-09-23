@@ -1,0 +1,1 @@
+If you compile DynMenu from source you will be missing extra functionality provided by the exe installer. Edit dym.reg so that the path to DynMenu.exe is correct and then add dym.reg to the registry by double clicking it.

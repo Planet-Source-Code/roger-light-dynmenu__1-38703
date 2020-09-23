@@ -1,0 +1,26 @@
+DynMenu
+=======
+
+v1.4.0 - 20th September 2002
+============================
+
+- Column breaks now work as follows:
+	Column count defines the number of columns in the root menu and overrides any column breaks defined in root menu items.
+	Sub menus can use column breaks on individual items even if Column count > 1
+
+- Optionally remove the "Add menu to systray" and "Edit menu" items.
+
+- Using "Add default items to bottom" should no longer break sub menus.
+
+- Cancelling "Open File" no longer removes the current menu.
+
+v1.3.2 - 10th September 2002
+============================
+
+- Updated tab stops
+
+
+v1.3.1 - 9th September 2002
+===========================
+
+- Fixed Add/Insert (small typo in CopyItem() )

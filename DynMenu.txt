@@ -1,0 +1,78 @@
+DynMenu v1.4.0 by Roger Light 20th September 2002
+=================================================
+
+DynMenu is a utility for creating menus. The menus are stored as an XML-esque file which, when double clicked, causes the menu to be displayed. The user can then pick their desired action.
+
+DynMenu is released under the Gnu Public License version 2. For users of the program this means that it can be distributed freely in its original form. Developers should see copying.txt.
+
+As an example of where this might be useful, I wrote DynMenu originally for use at my workplace. I tend a small number of unix/linux machines and frequently want to telnet/ssh to any one of the machines. Because I am lazy, I used to have a number of shortcut icons to putty which would cause putty to connect to a machine and give it my username - bingo, all I need to do is type my password. I can do exactly the same thing with DynMenu but only using one icon. I double click my menu file and it displays a list of my machines - clicking on the appropriate menu item connects me to that machine. This does take one more click than before, but it makes my windows desktop look a whole lot tidier...
+
+I use it to give me a list of folders for, for example, the current projects I am working on. It is quite like a specialised favourites list in this respect.
+
+I have also got a DynMenu with all of my play lists for Winamp in. Very handy.
+
+Using DynMenu
+=============
+
+Running DynMenu will invoke the editor. If you specify a .dym file as an argument when running DynMenu (eg. "dynmenu roger.dym") then the specified menu will be displayed. If you specify /edit and a .dym file (eg. "dynmenu /edit roger.dym") then the specified menu will be loaded into the editor.
+
+To add items to your menu use the Add or Insert buttons. Add adds an item after the currently selected item, Insert adds an item before the currently selected item. Delete deletes the currently selected item.
+
+Use the direction keys to change the position of the menu items. Use left and right to change the indentation of the items - an indented item indicates a sub menu. The parent item of a sub menu cannot be used to run commands, even though it will store commands.
+
+I'm not sure that moving items around works quite as I'd like yet. Apologies if it breaks.
+
+When any text box is changed, the changes are stored immediately.
+
+The Caption text box changes the caption of the currently selected menu item. Use an ampersand (&) before a letter to indicate a letter to be underlined in the caption.
+
+If you want a separator bar, use "-" as the caption.
+
+The Command text box indicates the command to be run when the menu is clicked. What is entered here depends on the setting of the Command Type combo.
+
+The Arguments text box gives any arguments that are to be passed to the command.
+
+The Command Type combo controls how the Command and Arguments are used. A "shell" command is any normal command eg. "notepad.exe". A "shellexec" command is a special type of command. If you use a "shellexec" type command, the command is usually one of the following:
+
+explore
+find
+open
+print
+printto
+
+The argument textbox would then contain a file to act upon. The command uses the default program for a particular file type. Note of course that not every file type has a default program for each shellexec command!
+
+As an example, if we wanted to open a text file "roger.txt" we could do it two ways.
+
+For Command Type = Shell:
+
+Command = "notepad.exe"
+Arguments = "roger.txt"
+
+For Command Type = ShellExec:
+
+Command = "open"
+Arguments = "roger.txt"
+
+These will both do the same thing on many systems, but if I have changed my default .txt program then using ShellExec will open the text file in my preferred editor.
+
+Perhaps a better example of where you can't be sure which program to use is with html files or music files. There are a great many programs that fight over these different file types and using "open" "somemusic.mp3" is obviously a lot easier than knowing which program to use.
+
+The System Tray
+===============
+
+It is possible to add DynMenus to the System Tray. This can be done either by right clicking the menu and selecting "Add to SysTray", opening the menu and selecting "Add to SysTray" or by running DynMenu with the switch "/systray" if you wanted say to put a menu in the System Tray on boot automatically. eg.
+
+DynMenu /systray roger.dym
+
+Known Problems
+==============
+
+I know of no problems at the moment, but I wouldn't be at all suprised if some twisted combination of sub menus refused to save/load properly. I'm fairly certain that it's ok now, but I wouldn't stake my life on it.
+
+Conclusion
+==========
+
+I hope you find a use for it! If you have any problems or questions, feel free to email me at roger@atchoo.org.
+
+Roger Light
